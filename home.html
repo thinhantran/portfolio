@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mon Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about" id="nav_about">À propos</a></li>
+            <li><a href="#skills" id="nav_skills">Compétences</a></li>
+            <li><a href="#formation" id="nav_formation">Formation</a></li>
+            <li><a href="#experience" id="nav_experience">Expériences</a></li>
+            <li><a href="#projects" id="nav_projects">Projets</a></li>
+            <li><a href="#hobbies" id="nav_hobbies">Loisirs</a></li>
+            <li><a href="#contact" id="nav_contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="language-switcher">
+        <select id="languageSwitcher">
+            <option value="fr" selected>Français</option>
+            <option value="en">English</option>
+            <option value="vi">Tiếng Việt</option>
+        </select>
+    </div>
+</header>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 id="heroTitle">Bonjour, je suis <span class="highlight">TRAN Thi Nhan</span></h1>
+            <p id="heroSubtitle">Développeuse Fullstack Junior</p>
+        </div>
+        <div class="hero-image">
+            <img src="avatar.webp" alt="TRAN Thi Nhan portrait" />
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="about">
+    <h2 id="aboutTitle">À propos de moi</h2>
+    <p id="aboutText">Développeuse passionnée par le web et les nouvelles technologies. J'aime apprendre, résoudre des problèmes complexes et créer des interfaces intuitives.</p>
+</section>
+
+<section id="skills" class="skills">
+    <h2 id="skillsTitle">Compétences</h2>
+    <div class="skill-bar">
+        <div class="skill-name">HTML</div>
+        <div class="bar-container"><div class="bar" style="--skill-level: 95%; width: 95%; background:#f6c177;"></div></div>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-name">CSS</div>
+        <div class="bar-container"><div class="bar" style="--skill-level: 90%; width: 90%; background:#f6c177;"></div></div>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-name">JavaScript</div>
+        <div class="bar-container"><div class="bar" style="--skill-level: 85%; width: 85%; background:#f6c177;"></div></div>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-name">React</div>
+        <div class="bar-container"><div class="bar" style="--skill-level: 80%; width: 80%; background:#f6c177;"></div></div>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-name">Node.js</div>
+        <div class="bar-container"><div class="bar" style="--skill-level: 75%; width: 75%; background:#f6c177;"></div></div>
+    </div>
+</section>
+
+<section id="formation" class="timeline-section">
+    <h2>Formation</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">2023 – 2025</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Master Informatique</h3>
+                <span>Université d’Artois – Faculté des sciences Jean Perrin</span>
+                <p>Programme avancé en développement logiciel, bases de données et systèmes distribués.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2019 – 2023</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Licence Informatique</h3>
+                <span>Université d’Artois – Faculté des sciences Jean Perrin</span>
+                <p>Études fondamentales en informatique, algorithmique et développement web.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2018 – 2019</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>DU FLEPES</h3>
+                <span>Université d’Artois – DELF B2</span>
+                <p>Diplôme universitaire de français langue étrangère pour études supérieures.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2017</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Baccalauréat Général</h3>
+                <span>Lycée Dong Gia – Hai Duong, Vietnam</span>
+                <p>Spécialisation en sciences, mention bien.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="timeline-section">
+    <h2>Expériences Professionnelles</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">09/2024 – Présent</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Alternance – Ingénieur développement web</h3>
+                <span>Worldline</span>
+                <p>Stack : Spring Boot, Vue.js, MariaDB, Docker
+                    Développement d’une messagerie interne, architecture front/backend, tests.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">04/2024 – 08/2024</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Stage – Développeur web</h3>
+                <span>Worldline</span>
+                <p>Stack : Flask, MySQL
+                    Application de monitoring temps réel, tableaux de bord dynamiques.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">03/2023 – 06/2023</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Stage – Développement web</h3>
+                <span>Université de Lille – SWEM</span>
+                <p>Stack : Django
+                    Refactoring, nouvelles fonctionnalités, travail d'équipe universitaire.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Mes Projets</h2>
+    <div class="project-list">
+        <div class="project-card">
+            <h3>Portfolio Personnel</h3>
+            <p>Un site web pour présenter mon profil et mes projets.</p>
+        </div>
+        <div class="project-card">
+            <h3>Application de gestion</h3>
+            <p>App fullstack de gestion de tâches avec Node.js et React.</p>
+        </div>
+    </div>
+</section>
+
+<section id="hobbies" class="hobbies">
+    <h2>Loisirs</h2>
+    <p>Lecture, musique, sport, jeux vidéo, voyage, développement personnel.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2 id="contactTitle">Contact</h2>
+    <p id="contactPhone">Téléphone : +33 6 12 34 56 78</p>
+    <p id="contactEmail">Email : example@gmail.com</p>
+    <p id="contactGitHub">GitHub : <a href="https://github.com/username" target="_blank">username</a></p>
+    <p id="contactAddress">Adresse : 123 Rue Exemple, 75000 Paris, France</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 TRAN Thi Nhan. Tous droits réservés.</p>
+</footer>
+
+<!-- Nếu bạn có script JS thì chèn vào đây -->
+
+</body>
+</html>
