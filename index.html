@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mon Portfolio</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -19,7 +19,7 @@
             <li><a href="#formation" id="nav_formation">Formation</a></li>
             <li><a href="#experience" id="nav_experience">Expériences</a></li>
             <li><a href="#projects" id="nav_projects">Projets</a></li>
-            <li><a href="#hobbies" id="nav_hobbies">Loisirs</a></li>
+            <li><a href="#loisirs" id="nav_hobbies">Loisirs</a></li>
             <li><a href="#contact" id="nav_contact">Contact</a></li>
         </ul>
     </nav>
@@ -36,7 +36,7 @@
 <section class="hero">
     <div class="hero-content">
         <div class="hero-text">
-            <h1 id="heroTitle">Bonjour, je suis <span class="highlight">TRAN Thi Nhan</span></h1>
+            <h1 id="heroTitle"><span class="highlight">TRAN Thi Nhan</span></h1>
             <p id="heroSubtitle">Développeuse Fullstack Junior</p>
         </div>
         <div class="hero-image">
@@ -53,27 +53,43 @@
 
 <section id="skills" class="skills">
     <h2 id="skillsTitle">Compétences</h2>
+
     <div class="skill-bar">
-        <div class="skill-name">HTML</div>
-        <div class="bar-container"><div class="bar" style="--skill-level: 95%; width: 95%; background:#f6c177;"></div></div>
+        <span>Java (Spring Boot)</span>
+        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
     </div>
+
     <div class="skill-bar">
-        <div class="skill-name">CSS</div>
-        <div class="bar-container"><div class="bar" style="--skill-level: 90%; width: 90%; background:#f6c177;"></div></div>
+        <span>Python (Django, Flask)</span>
+        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
     </div>
+
     <div class="skill-bar">
-        <div class="skill-name">JavaScript</div>
-        <div class="bar-container"><div class="bar" style="--skill-level: 85%; width: 85%; background:#f6c177;"></div></div>
+        <span>C</span>
+        <div class="bar"><div class="fill" style="width: 70%;"></div></div>
     </div>
+
     <div class="skill-bar">
-        <div class="skill-name">React</div>
-        <div class="bar-container"><div class="bar" style="--skill-level: 80%; width: 80%; background:#f6c177;"></div></div>
+        <span>Vue.js, Astro, HTML/CSS</span>
+        <div class="bar"><div class="fill" style="width: 80%;"></div></div>
     </div>
+
     <div class="skill-bar">
-        <div class="skill-name">Node.js</div>
-        <div class="bar-container"><div class="bar" style="--skill-level: 75%; width: 75%; background:#f6c177;"></div></div>
+        <span>PostgreSQL/MariaDB/MySQL/S3</span>
+        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="skill-bar">
+        <span>Mobilité Android</span>
+        <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill-bar">
+        <span>Docker & Git</span>
+        <div class="bar"><div class="fill" style="width: 75%;"></div></div>
     </div>
 </section>
+
 
 <section id="formation" class="timeline-section">
     <h2>Formation</h2>
@@ -160,36 +176,66 @@
 
 <section id="projects" class="projects">
     <h2>Mes Projets</h2>
-    <div class="project-list">
-        <div class="project-card">
-            <h3>Portfolio Personnel</h3>
-            <p>Un site web pour présenter mon profil et mes projets.</p>
+
+    <div class="project-tabs">
+        <button class="tab-btn active" data-tab="academic">Projets Académiques</button>
+        <button class="tab-btn" data-tab="personal">Projets Personnels</button>
+    </div>
+
+    <div class="project-content">
+        <div class="project-panel active" id="academic">
+            <div class="project-card">
+                <h4>Portfolio Personnel</h4>
+                <p>Site web de présentation de profil et projets, réalisé avec HTML/CSS & JS.</p>
+                <span class="tag">Front-end</span>
+                <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-card">
+                <h4>Application de Gestion</h4>
+                <p>Application fullstack avec React et Node.js pour gérer les tâches.</p>
+                <span class="tag">Fullstack</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>Application de gestion</h3>
-            <p>App fullstack de gestion de tâches avec Node.js et React.</p>
+
+        <div class="project-panel" id="personal">
+            <p class="empty-project">Aucun projet personnel pour le moment.</p>
         </div>
     </div>
 </section>
 
-<section id="hobbies" class="hobbies">
+
+
+<section id="loisirs" class="loisirs">
     <h2>Loisirs</h2>
-    <p>Lecture, musique, sport, jeux vidéo, voyage, développement personnel.</p>
+    <div class="loisir-grid">
+        <div class="loisir-item">
+            <i class="fas fa-book-reader"></i>
+            <span>Lecture</span>
+        </div>
+        <div class="loisir-item">
+            <i class="fas fa-film"></i>
+            <span>Cinéma</span>
+        </div>
+        <div class="loisir-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Puzzle</span>
+        </div>
+    </div>
 </section>
 
 <section id="contact" class="contact">
     <h2 id="contactTitle">Contact</h2>
-    <p id="contactPhone">Téléphone : +33 6 12 34 56 78</p>
-    <p id="contactEmail">Email : example@gmail.com</p>
-    <p id="contactGitHub">GitHub : <a href="https://github.com/username" target="_blank">username</a></p>
-    <p id="contactAddress">Adresse : 123 Rue Exemple, 75000 Paris, France</p>
+    <p id="contactPhone">Téléphone : +33 7 69 74 33 03</p>
+    <p id="contactEmail">Email : trannhan2589@gmail.com</p>
+    <p id="contactGitHub">GitHub : <a href="https://github.com/thinhantran" target="_blank">thinhantran</a></p>
+    <p id="contactAddress">Adresse : 62300 Lens, France</p>
 </section>
 
 <footer>
     <p>&copy; 2025 TRAN Thi Nhan. Tous droits réservés.</p>
 </footer>
-
-<!-- Nếu bạn có script JS thì chèn vào đây -->
 
 </body>
 </html>

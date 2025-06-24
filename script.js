@@ -72,3 +72,16 @@ document.getElementById("languageSwitcher").addEventListener("change", function 
     const selectedLang = this.value;
     switchLanguage(selectedLang);
 });
+
+document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        // Xóa active cũ
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.project-panel').forEach(panel => panel.classList.remove('active'));
+
+        // Gán active mới
+        button.classList.add('active');
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
