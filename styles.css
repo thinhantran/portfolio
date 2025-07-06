@@ -136,6 +136,17 @@ nav {
     transform: scale(1.05);
 }
 
+#heroSubtitle::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
 /* Responsive */
 @media (max-width: 700px) {
     .hero-content {
@@ -462,4 +473,123 @@ a:hover {
 
 .loisir-item:hover span {
     color: var(--color-highlight);
+}
+
+/* Projets card */
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 14px rgba(246, 193, 119, 0.15);
+    cursor: pointer;
+    text-align: center;
+    width: 240px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.tags {
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background: var(--color-secondary);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: slideUp 0.4s ease;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Logo image style */
+.logo-marquee {
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 25s linear infinite;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo-track img {
+    height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    mix-blend-mode: screen;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }

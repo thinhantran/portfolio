@@ -37,11 +37,44 @@
     <div class="hero-content">
         <div class="hero-text">
             <h1 id="heroTitle"><span class="highlight">TRAN Thi Nhan</span></h1>
-            <p id="heroSubtitle">Développeuse Fullstack Junior</p>
+            <p id="heroSubtitle">Développeuse Fullstack</p>
         </div>
         <div class="hero-image">
             <img src="avatar.webp" alt="TRAN Thi Nhan portrait" />
         </div>
+    </div>
+</section>
+<section class="logo-marquee">
+    <div class="logo-track">
+        <!-- Logos trường -->
+        <img src="logos/Université_d'Artois_(logo).svg.png" alt="Université d'Artois" />
+
+        <!-- Logos công ty -->
+        <img src="logos/worldline.svg" alt="Worldline" />
+        <img src="logos/unv_Lille.png" alt="Université de Lille" />
+
+        <!-- Logos công nghệ -->
+        <img src="logos/Spring_Boot.png" alt="Spring Boot" />
+        <img src="logos/vue-js.svg" alt="Vue.js" />
+        <img src="logos/python.svg" alt="Python" />
+        <img src="logos/docker.svg" alt="Docker" />
+        <img src="logos/git.svg" alt="Git" />
+        <img src="logos/postgresql-ar21.svg" alt="PostgreSQL" />
+        <img src="logos/mysql-ar21.svg" alt="MySQL" />
+        <img src="logos/mariadb.svg" alt="MariaDB" />
+
+        <!-- Repeat for smooth infinite scroll -->
+        <img src="logos/Université_d'Artois_(logo).svg.png" alt="Université d'Artois" />
+        <img src="logos/worldline.svg" alt="Worldline" />
+        <img src="logos/unv_Lille.png" alt="Université de Lille" />
+        <img src="logos/Spring_Boot.png" alt="Spring Boot" />
+        <img src="logos/vue-js.svg" alt="Vue.js" />
+        <img src="logos/python.svg" alt="Python" />
+        <img src="logos/docker.svg" alt="Docker" />
+        <img src="logos/git.svg" alt="Git" />
+        <img src="logos/postgresql-ar21.svg" alt="PostgreSQL" />
+        <img src="logos/mysql-ar21.svg" alt="MySQL" />
+        <img src="logos/mariadb.svg" alt="MariaDB" />
     </div>
 </section>
 
@@ -183,24 +216,13 @@
     </div>
 
     <div class="project-content">
-        <div class="project-panel active" id="academic">
-            <div class="project-card">
-                <h4>Portfolio Personnel</h4>
-                <p>Site web de présentation de profil et projets, réalisé avec HTML/CSS & JS.</p>
-                <span class="tag">Front-end</span>
-                <span class="tag">HTML/CSS</span>
-            </div>
-            <div class="project-card">
-                <h4>Application de Gestion</h4>
-                <p>Application fullstack avec React et Node.js pour gérer les tâches.</p>
-                <span class="tag">Fullstack</span>
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
-            </div>
-        </div>
-
-        <div class="project-panel" id="personal">
-            <p class="empty-project">Aucun projet personnel pour le moment.</p>
+        <div class="project-panel active" id="academic"></div>
+        <div class="project-panel" id="personal"></div>
+    </div>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">Chargement...</div>
         </div>
     </div>
 </section>
