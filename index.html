@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script src="script/translate.js" defer></script>
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -44,6 +45,7 @@
         </div>
     </div>
 </section>
+
 <section class="logo-marquee">
     <div class="logo-track">
         <!-- Logos trường -->
@@ -78,10 +80,14 @@
     </div>
 </section>
 
-
 <section id="about" class="about">
     <h2 id="aboutTitle">À propos de moi</h2>
-    <p id="aboutText">Développeuse passionnée par le web et les nouvelles technologies. J'aime apprendre, résoudre des problèmes complexes et créer des interfaces intuitives.</p>
+    <p id="aboutText">
+        Je suis une développeuse fullstack motivée, persévérante et toujours prête à relever de nouveaux défis.
+        Curieuse et passionnée par la technologie, j'aime apprendre continuellement et m'adapter à différents environnements.
+        Mon parcours m’a permis de développer une solide capacité d’analyse, une grande autonomie ainsi qu’un bon esprit d’équipe.
+        Mon objectif est de contribuer activement à des projets innovants et d'évoluer constamment dans le domaine du développement logiciel.
+    </p>
 </section>
 
 <section id="skills" class="skills">
@@ -123,17 +129,17 @@
     </div>
 </section>
 
-
 <section id="formation" class="timeline-section">
-    <h2>Formation</h2>
-    <div class="timeline">
+    <h2 id="formationTitle">Formation</h2>
+    <div class="timeline" id="formationTimeline">
         <div class="timeline-item">
             <div class="timeline-date">2023 – 2025</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3>Master Informatique</h3>
                 <span>Université d’Artois – Faculté des sciences Jean Perrin</span>
-                <p>Programme avancé en développement logiciel, bases de données et systèmes distribués.</p>
+                <p>Parcours: Ingénierie Logicielle pour l'Internet</p>
+                <p>Programme avancé en développement logiciel, bases de données et admnistration des serveurs et sécurité liée à l'internet.</p>
             </div>
         </div>
 
@@ -163,23 +169,25 @@
             <div class="timeline-content">
                 <h3>Baccalauréat Général</h3>
                 <span>Lycée Dong Gia – Hai Duong, Vietnam</span>
-                <p>Spécialisation en sciences, mention bien.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section id="experience" class="timeline-section">
-    <h2>Expériences Professionnelles</h2>
-    <div class="timeline">
+    <h2 id="experienceTitle">Expériences Professionnelles</h2>
+    <div class="timeline" id="experienceTimeline">
         <div class="timeline-item">
-            <div class="timeline-date">09/2024 – Présent</div>
+            <div class="timeline-date">09/2024 – 09/2025</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3>Alternance – Ingénieur développement web</h3>
                 <span>Worldline</span>
-                <p>Stack : Spring Boot, Vue.js, MariaDB, Docker
-                    Développement d’une messagerie interne, architecture front/backend, tests.</p>
+                <p>Stack : Spring Boot, Vue.js, MariaDB, Docker, S3, Prometheus
+                    • Développement d’une plateforme de messagerie interne
+                    • Conception d’architecture front/backend
+                    • Analyse, développement, tests
+                </p>
             </div>
         </div>
 
@@ -190,7 +198,9 @@
                 <h3>Stage – Développeur web</h3>
                 <span>Worldline</span>
                 <p>Stack : Flask, MySQL
-                    Application de monitoring temps réel, tableaux de bord dynamiques.</p>
+                    • Application de monitoring temps réel
+                    • Tableaux de bord dynamiques
+                </p>
             </div>
         </div>
 
@@ -201,14 +211,17 @@
                 <h3>Stage – Développement web</h3>
                 <span>Université de Lille – SWEM</span>
                 <p>Stack : Django
-                    Refactoring, nouvelles fonctionnalités, travail d'équipe universitaire.</p>
+                    • Refactoring de modules existants
+                    • Développement de nouvelles fonctionnalités
+                    • Travail collaboratif avec une équipe universitaire
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <section id="projects" class="projects">
-    <h2>Mes Projets</h2>
+    <h2 id="projectsTitle">Mes Projets</h2>
 
     <div class="project-tabs">
         <button class="tab-btn active" data-tab="academic">Projets Académiques</button>
@@ -230,7 +243,7 @@
 
 
 <section id="loisirs" class="loisirs">
-    <h2>Loisirs</h2>
+    <h2 id="loisirsTitle">Loisirs</h2>
     <div class="loisir-grid">
         <div class="loisir-item">
             <i class="fas fa-book-reader"></i>
