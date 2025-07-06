@@ -100,4 +100,5 @@ window.translations_vi = {
     contactEmail: "Email: trannhan2589@gmail.com",
     contactGitHub: "GitHub: <a href='https://github.com/thinhantran' target='_blank'>thinhantran</a>",
     contactAddress: "Địa chỉ: 62300 Lens, Pháp",
+    footerText: "© 2025 TRAN Thi Nhan. Bản quyền mọi quyền được bảo lưu.",
 }

@@ -100,4 +100,5 @@ window.translations_fr = {
     contactEmail: "Email : trannhan2589@gmail.com",
     contactGitHub: "GitHub: <a href='https://github.com/thinhantran' target='_blank'>thinhantran</a>",
     contactAddress: "Adresse : 62300 Lens, France",
+    footerText: "© 2025 TRAN Thi Nhan. Tous droits réservés.",
 }
