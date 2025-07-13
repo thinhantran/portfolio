@@ -83,13 +83,13 @@ window.translations_fr = {
             ]
         }
     ],
-    projectsTitle: "My Projects",
+    projectsTitle: "Mes Projets",
     projectsTabs: {
         academic: "Projets Académiques",
         personal: "Projets Personnels"
     },
 
-    loisirsTitle: "Hobbies",
+    loisirsTitle: "Loisirs",
     loisirsData: [
         { iconClass: "fas fa-book-reader", label: "Lecture" },
         { iconClass: "fas fa-film", label: "Cinéma" },

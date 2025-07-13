@@ -158,7 +158,7 @@ nav {
 }
 
 /* Sections */
-section:not(.hero) {
+section:not(.hero):not(.logo-marquee) {
     padding: 4rem 2rem;
     border-bottom: 1px solid #f0d8c2;
     max-width: 800px;
@@ -264,7 +264,7 @@ h2 {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.4s ease 0.2s, max-height 0.4s ease 0.2s;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
     font-size: 1rem;
     white-space: pre-line;
 }
@@ -544,19 +544,22 @@ a:hover {
 
 /* Logo image style */
 .logo-marquee {
+    width: 100vw;
+    padding: 2rem 2rem;
     overflow: hidden;
     background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
-    padding: 1rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
 }
 
 .logo-track {
-    display: flex;
+    display: inline-flex;
     width: max-content;
     animation: scroll-left 25s linear infinite;
     gap: 2rem;
     align-items: center;
+    margin: 0 auto;
 }
 
 .logo-track img {
